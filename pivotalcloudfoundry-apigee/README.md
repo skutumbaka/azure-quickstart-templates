@@ -1,11 +1,17 @@
 # Pivotal Apigee Azure Quickstart
 
-<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2Fazure-quickstart-templates%2Fmaster%2Fpivotalcloudfoundry-apigee%2Fazuredeploy.json" target="_blank">
-<img src="http://azuredeploy.net/deploybutton.png"/>
-</a>
-<a href="http://armviz.io/#/?load=https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2Fazure-quickstart-templates%2Fmaster%2Fpivotalcloudfoundry-apigee%2Fazuredeploy.json" target="_blank">
-<img src="http://armviz.io/visualizebutton.png"/>
-</a>
+![Azure Public Test Date](https://azurequickstartsservice.blob.core.windows.net/badges/pivotalcloudfoundry-apigee/PublicLastTestDate.svg)
+![Azure Public Test Result](https://azurequickstartsservice.blob.core.windows.net/badges/pivotalcloudfoundry-apigee/PublicDeployment.svg)
+
+![Azure US Gov Last Test Date](https://azurequickstartsservice.blob.core.windows.net/badges/pivotalcloudfoundry-apigee/FairfaxLastTestDate.svg)
+![Azure US Gov Last Test Result](https://azurequickstartsservice.blob.core.windows.net/badges/pivotalcloudfoundry-apigee/FairfaxDeployment.svg)
+
+![Best Practice Check](https://azurequickstartsservice.blob.core.windows.net/badges/pivotalcloudfoundry-apigee/BestPracticeResult.svg)
+![Cred Scan Check](https://azurequickstartsservice.blob.core.windows.net/badges/pivotalcloudfoundry-apigee/CredScanResult.svg)
+
+[![Deploy To Azure](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazure.svg?sanitize=true)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2Fazure-quickstart-templates%2Fmaster%2Fpivotalcloudfoundry-apigee%2Fazuredeploy.json)  [![Visualize](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/visualizebutton.svg?sanitize=true)](http://armviz.io/#/?load=https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2Fazure-quickstart-templates%2Fmaster%2Fpivotalcloudfoundry-apigee%2Fazuredeploy.json)
+
+
 
 #### IMPORTANT: Before you deploy the template make sure you have accepted Pivotal End User License Agreement:
 
@@ -34,8 +40,6 @@ Pivotal Cloud Foundry’s service broker API is used to create the Apigee servic
 The Apigee service broker supports Apigee Edge, including Trial, SMB, Startup, and Enterprise.
 
 ![Pivotal Cloud Foundry Integration with Apigee Edge Gateway](https://github.com/sysgain/azurequickstarts/blob/vcherukuri-patch-1/PivtoalCloudFoundry-Concourse-Apigee-AzureMetaService/pivotal-P2P/Images/Solution%20Integration.png?raw=true)
-
-
 
 ## Product Architecture
 ![Product Architecture](https://raw.githubusercontent.com/sysgain/pivotal/master/pivotal-P2P-Architecture.jpg)
@@ -95,7 +99,7 @@ Azure Storage Blob Service - Azure Storage Service offers reliable, economical c
 
 Azure Redis Cache Service - Azure Redis Cache is based on the popular open-source Redis cache. It gives you access to a secure, dedicated Redis cache, managed by Microsoft and accessible from any application within Azure. This broker currently publishes a single service and plan for provisioning Azure Redis Cache.
 
-Azure DocumentDB Service - Azure DocumentDB is a NoSQL document database service designed from the ground up to natively support JSON and JavaScript directly inside the database engine.
+Azure Cosmos DB Service - Azure Cosmos DB is a NoSQL document database service designed from the ground up to natively support JSON and JavaScript directly inside the database engine.
 
 Azure Service Bus Service - Azure Service Bus keep apps and devices connected across private and public clouds. This broker currently publishes a single service and plan for provisioning Azure Service Bus Service.
 
@@ -108,7 +112,6 @@ Document DB
 SQL Server
 3 Public IP Addresses
 
-
 ## Deployment Steps
 
 You can click the “Deploy to Azure” button at the beginning of this document or follow the instructions for command line deployment using the scripts in the root of this repo.
@@ -117,5 +120,6 @@ Please refer to parameter descriptions if you need more information on what need
 The deployment takes about 5 Hours. 
 
 To work with Pivotal Cloud Foundry Hands on Lab click [here](http://pcf-ignite.pcfazure.com/Labs/)
+
 
 

@@ -1,5 +1,5 @@
 {
-  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
   "contentVersion": "1.0.0.0",
   "parameters": {
     "location": {
@@ -76,7 +76,7 @@
             "properties": {
               "priority": 1010,
               "sourceAddressPrefix": "*",
-              "protocol": "TCP",
+              "protocol": "Tcp",
               "destinationPortRange": "80",
               "access": "Allow",
               "direction": "Inbound",
@@ -89,7 +89,7 @@
             "properties": {
               "priority": 1020,
               "sourceAddressPrefix": "*",
-              "protocol": "TCP",
+              "protocol": "Tcp",
               "destinationPortRange": "3389",
               "access": "Allow",
               "direction": "Inbound",

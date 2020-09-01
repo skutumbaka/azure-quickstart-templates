@@ -1,5 +1,14 @@
 # Create Splunk Enterprise standalone or cluster on Azure
 
+![Azure Public Test Date](https://azurequickstartsservice.blob.core.windows.net/badges/splunk-on-ubuntu/PublicLastTestDate.svg)
+![Azure Public Test Result](https://azurequickstartsservice.blob.core.windows.net/badges/splunk-on-ubuntu/PublicDeployment.svg)
+
+![Azure US Gov Last Test Date](https://azurequickstartsservice.blob.core.windows.net/badges/splunk-on-ubuntu/FairfaxLastTestDate.svg)
+![Azure US Gov Last Test Result](https://azurequickstartsservice.blob.core.windows.net/badges/splunk-on-ubuntu/FairfaxDeployment.svg)
+
+![Best Practice Check](https://azurequickstartsservice.blob.core.windows.net/badges/splunk-on-ubuntu/BestPracticeResult.svg)
+![Cred Scan Check](https://azurequickstartsservice.blob.core.windows.net/badges/splunk-on-ubuntu/CredScanResult.svg)
+
 **US Government Cloud**
 
 [![Deploy to Azure Gov](https://azuredeploy.net/AzureGov.png)](https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fazure%2Fazure-quickstart-templates%2Fmaster%2Fsplunk-on-ubuntu%2Fazuredeploy-gov.json)
@@ -12,7 +21,7 @@ The template system that deploys to US Government Cloud is largely identical to 
 
 [![Deploy to Azure](https://azuredeploy.net/deploybutton.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2Fazure-quickstart-templates%2Fmaster%2Fsplunk-on-ubuntu%2Fazuredeploy.json)
 
-This template deploys Splunk Enterprise 6.6 on Azure as either **standalone** instance or distributed **cluster** (up to 20 indexers). Each instance has eight (8) 1-TB data drives in RAID0 configuration. The template also provisions a storage account, a virtual network with subnets, public IP address, and all network interfaces & security groups required.
+This template deploys Splunk Enterprise 6.6 on Azure as either **standalone** instance or distributed **cluster** (up to 30 indexers). Each instance has eight (8) 1-TB data drives in RAID0 configuration. The template also provisions a storage account, a virtual network with subnets, public IP address, and all network interfaces & security groups required.
 
 Once the deployment is complete, Splunk Enterprise can be accessed using the configured DNS address. The DNS address will include the `domainNamePrefix` and `location` entered as parameters in the format `{domainNamePrefix}.{location}.cloudapp.azure.com`. If you created a deployment with `domainNamePrefix` parameter set to "splunk" in the West US region, then Splunk Enterprise can be accessed at `https://splunk.westus.cloudapp.azure.com`.
 
@@ -46,7 +55,6 @@ Below is the list of template parameters:
 | forwardedDataFrom | | CIDR block from which forwarded data is allowed. Default is data can be received from anywhere |
 | domainNamePrefix | :heavy_check_mark: | Prefix for domain name to access Splunk |
 | publicIPName | | Name of the Search Head public IP address. Default: splunksh-publicip |
-
 
 NOTE:
 * This solution uses Splunk's default certificates to enable HTTPS which will create a browser warning. Please follow instructions in Splunk Docs to secure Splunk Web [with your own SSL certificates](http://docs.splunk.com/Documentation/Splunk/latest/Security/SecureSplunkWebusingasignedcertificate).
@@ -84,3 +92,4 @@ Cluster indexers have the following ports open:
 ##Third-party software credits
 - VM utility shell script: MIT license
 - [Opscode Chef Splunk Cookbook](https://github.com/rarsan/chef-splunk): Apache 2.0 license
+
