@@ -180,7 +180,7 @@
         },
         "parameters": {
           "virtualMachineName": {
-            "value": "[take(concat(parameters('IntegrationRuntimeName'),'vm',copyIndex(),'-', variables('prefix')), 15)]"
+            "value": "[take(concat(parameters('IntegrationRuntimeName'),'-','vm',copyIndex(), variables('prefix')), 15)]"
           },
           "vmSize": {
             "value": "[parameters('vmSize')]"
