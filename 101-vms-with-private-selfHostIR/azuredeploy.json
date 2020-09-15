@@ -232,7 +232,7 @@
             "value": "[reference(resourceId(parameters('existingDataFactoryResourceGroup'), 'Microsoft.Resources/deployments', 'nestedTemplate')).outputs.irId.value]"
           },
           "virtualMachineName": {
-            "value": "[take(concat('vm',copyIndex(),'-', variables('prefix')), 15)]"
+            "value": "[take(concat(parameters('IntegrationRuntimeName'),'-','vm',copyIndex(), variables('prefix')), 15)]"
           },
           "existingVnetLocation": {
             "value": "[parameters('existingVnetLocation')]"
