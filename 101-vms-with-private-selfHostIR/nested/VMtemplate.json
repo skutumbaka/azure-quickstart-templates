@@ -73,10 +73,7 @@
         },
         "storageProfile": {
           "imageReference": {
-            "name": "win2019",            
-            "gallery-name": "humana_gallery",
-            "resource-group": "iaas-images-east2-rg",
-            "subscription": "788d0172-c030-4746-b72a-150ffeb686a7"
+            "id": "/subscriptions/788d0172-c030-4746-b72a-150ffeb686a7/resourceGroups/iaas-images-east2-rg/providers/Microsoft.Compute/galleries/humana_gallery/images/win2019/versions/latest"            
           },
           "osDisk": {
            
