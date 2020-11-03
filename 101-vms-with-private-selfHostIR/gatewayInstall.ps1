@@ -168,7 +168,7 @@ function Register-Gateway([string] $instanceKey)
 
 
 Trace-Log "Log file: $logLoc"
-$uri = "https://www.microsoft.com/en-us/download/confirmation.aspx?id=39717"
+$uri = "https://go.microsoft.com/fwlink/?linkid=839822"
 Trace-Log "Gateway download fw link: $uri"
 $gwPath= "$PWD\gateway.msi"
 Trace-Log "Gateway download location: $gwPath"
